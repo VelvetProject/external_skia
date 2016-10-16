@@ -837,6 +837,8 @@ LOCAL_WHOLE_STATIC_LIBRARIES := libskia_static
 LOCAL_SHARED_LIBRARIES := \
         libcutils
 
+LOCAL_SDCLANG_LTO := true
+
 ifeq ($(TARGET_HAVE_QC_PERF),true)
         LOCAL_WHOLE_STATIC_LIBRARIES += libqc-skia
 endif
